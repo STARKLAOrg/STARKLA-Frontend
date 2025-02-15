@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
-import DifficultySelector from './DifficultySelector';
-import GameBoard from './GameBoard';
-import GameOver from './GameOver';
-import { DIFFICULTY_SETTINGS } from './constants';
+import DifficultySelector from './difficulty-selector';
+import GameBoard from './game-board';
+import GameOver from './game-over';
+import { DIFFICULTY_SETTINGS } from './mock-data-word-matching/word-matching';
 
 const WordMatchingGame = () => {
   const [difficulty, setDifficulty] = useState('Medium');

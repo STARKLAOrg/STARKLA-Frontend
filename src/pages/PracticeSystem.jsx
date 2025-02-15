@@ -1,9 +1,9 @@
-import TopHeaders from "../components/practice/TopHeaders";
-import QuestionsSection from "../components/practice/QuestionsSection";
+import TopHeaders from "../components/practices/exercises/top-headers";
+import QuestionsSection from "../components/practices/exercises/questions-section";
 import { MdOutlineReplay } from "react-icons/md";
 import { IoMdArrowRoundBack } from "react-icons/io";
 
-import { web3Questions } from "../components/practice/qestion";
+import { web3Questions } from "../components/practices/mock-data-practices/qestion";
 import { useState } from "react";
 
 const PracticeSystem = () => {

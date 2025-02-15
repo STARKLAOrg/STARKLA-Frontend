@@ -1,5 +1,5 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import MainLayout from './components/layout/MainLayout';
+import MainLayout from './components/layout/main-layout';
 import LearningContent from './pages/LearningContent';
 import CertificationsObtained from './pages/CertificationsObtained';
 import SettingsPage from './pages/SettingsPage';
@@ -10,12 +10,12 @@ import CertificationContent from './pages/CertificationContent';
 import ModuleDetails from './pages/ModuleDetails';
 import WalletConnection from './pages/WalletConnection';
 import HomePage from './pages/HomePage';
-import PracticeSystem from './components/practice/DragDropSentenceBuilder';
+import PracticeSystem from './components/practices/exercises/drag-drop-sentence-builder';
 import StoryGame from './pages/StoryGame';
 import WordMatching from './pages/Games/WordMatching';
 import GamePanel from './pages/GamePanel';
-import DifficultySelector from './components/Games/memory-card/DifficultySelector';
-import GameBoard from './components/Games/memory-card/GameBoard';
+import DifficultySelector from './components/games/memory-card/difficulty-selector';
+import GameBoard from './components/games/memory-card/game-board';
 import Quiz from './pages/Quiz';
 import GrammarContent from "./pages/GrammarContent";
 import VocabularyPage from './pages/VocabularyContent';
@@ -24,7 +24,7 @@ import ListeningPage from './pages/ListeningContent';
 import ReadingContent from "./pages/ReadingContent";
 import CommunityInteractionPage from './pages/Community';
 import Notifications from './pages/Notifications';
-import SentenceBuilder from './components/practice/SentenceBuilder';
+import SentenceBuilder from './components/practices/exercises/sentence-builder';
 import FillInTheBlanksQuizPage from './pages/FillInTheBlanksQuizPage';
 
 function App() {

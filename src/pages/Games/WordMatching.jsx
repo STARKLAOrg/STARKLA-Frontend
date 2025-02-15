@@ -1,5 +1,5 @@
 import React from 'react';
-import WordMatchingGame from '../../components/games/word-matching/WordMatchingGame';
+import WordMatchingGame from '../../components/games/word-matching/word-matching-game';
 
 const MatchingGamePage = () => {
   return (

@@ -1,6 +1,6 @@
 import React from "react";
-import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/card";
-import { Progress } from "@/components/ui/progress";
+import { Card, CardHeader, CardTitle, CardContent } from "@/components/layout/ui/card";
+import { Progress } from "@/components/layout/ui/progress";
 import { Book, CheckCircle, Lock } from "lucide-react";
 import { Link } from "react-router-dom";
 

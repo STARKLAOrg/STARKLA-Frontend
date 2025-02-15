@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { LEVELS } from '../data/memoryLevels';
+import { LEVELS } from './mock-data-memory-card/memory-levels';
 
 const DifficultySelector = () => {
   return (

@@ -2,9 +2,9 @@ import { useState, useEffect } from 'react';
 import PropTypes from 'prop-types';
 import { DndProvider, useDrag, useDrop } from 'react-dnd';
 import { HTML5Backend } from 'react-dnd-html5-backend';
-import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/card";
-import { Button } from "@/components/ui/button";
-import { Progress } from "@/components/ui/progress";
+import { Card, CardHeader, CardTitle, CardContent } from "@/components/layout/ui/card";
+import { Button } from "@/components/layout/ui/button";
+import { Progress } from "@/components/layout/ui/progress";
 
 const SENTENCES_DATA = [
   {

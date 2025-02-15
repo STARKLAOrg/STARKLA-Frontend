@@ -2,9 +2,9 @@ import React, { useState, useEffect } from "react";
 import { DndProvider } from "react-dnd";
 import { HTML5Backend } from "react-dnd-html5-backend";
 import { FaArrowLeft, FaSyncAlt } from "react-icons/fa";
-import StoryRenderer from "./StoryRenderer";
-import DraggableWord from "./DraggableWord";
-import CompletionScreen from "./CompletionScreen";
+import StoryRenderer from "./story-renderer";
+import DraggableWord from "./draggable-word";
+import CompletionScreen from "./completion-screen";
 
 const GameCompleteStory = ({
   storyText,

@@ -7,11 +7,11 @@ test('use jsdom in this test file', () => {
 });
 import React from 'react';
 import { render, screen, fireEvent } from '@testing-library/react';
-import Sidebar from '../components/layout/Sidebar';
+import Sidebar from '../components/layout/sidebar';
 import { BrowserRouter } from 'react-router-dom';
 import userEvent from '@testing-library/user-event';
 import HomePage from '../pages/HomePage';
-import Header from '../components/layout/Header';
+import Header from '../components/layout/header';
 
 test('initiating the onboarding process of new user', async () => {
     render(<HomePage />, { wrapper: BrowserRouter })

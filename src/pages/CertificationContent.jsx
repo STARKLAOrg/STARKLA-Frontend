@@ -1,7 +1,7 @@
 import React from "react";
 import { useLocation, useNavigate } from "react-router-dom";
-import CertificationBanner from "./../components/certification/CertificationBanner";
-import LearningCard from "./../components/certification/LearningCard";
+import CertificationBanner from "../components/english-level/english-banner";
+import LearningCard from "../components/learning-path/learning-card";
 import learningModuleImg from "../assets/learning_module.png";
 import certificationBanner from "../assets/certification_banner.png";
 import software_arquitectureImg from "../assets/software_arquitecture.png";

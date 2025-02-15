@@ -2,9 +2,9 @@ import { useState, useEffect } from 'react';
 import PropTypes from 'prop-types';
 import { DndProvider, useDrag, useDrop } from 'react-dnd';
 import { HTML5Backend } from 'react-dnd-html5-backend';
-import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/card";
-import { Button } from "@/components/ui/button";
-import { Progress } from "@/components/ui/progress";
+import { Card, CardHeader, CardTitle, CardContent } from "@/components/layout/ui/card";
+import { Button } from "@/components/layout/ui/button";
+import { Progress } from "@/components/layout/ui/progress";
 import { v4 as uuidv4 } from 'uuid';
 import { useNavigate } from 'react-router-dom';
 const SENTENCES_DATA = [

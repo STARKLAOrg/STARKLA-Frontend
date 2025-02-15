@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
-import { WORD_PAIRS, GAME_SETTINGS } from './constants';
-import Card from './Card';
-import ScoreDisplay from './ScoreDisplay';
+import { WORD_PAIRS, GAME_SETTINGS } from './mock-data-word-matching/word-matching';
+import Card from './card';
+import ScoreDisplay from './score-display';
 
 const GameBoard = ({ difficulty, settings, onGameOver, onScoreUpdate }) => {
   const [cards, setCards] = useState([]);

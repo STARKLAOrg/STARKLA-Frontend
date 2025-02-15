@@ -1,5 +1,5 @@
 import React from 'react';
-import { DIFFICULTY_SETTINGS } from './constants';
+import { DIFFICULTY_SETTINGS } from './mock-data-word-matching/word-matching';
 
 const DifficultySelector = ({ onSelect, currentDifficulty }) => {
   return (

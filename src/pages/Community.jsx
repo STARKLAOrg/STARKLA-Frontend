@@ -1,6 +1,6 @@
 import React from 'react';
-import { Card, CardHeader, CardTitle, CardContent, CardFooter } from '@/components/ui/card';
-import { Button } from '@/components/ui/button';
+import { Card, CardHeader, CardTitle, CardContent, CardFooter } from '@/components/layout/ui/card';
+import { Button } from '@/components/layout/ui/button';
 import { Users, GraduationCap, Target } from 'lucide-react';
 
 const CommunityInteractionPage = () => {

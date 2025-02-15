@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import { useParams, Link } from 'react-router-dom';
 
-import GameModal from './GameModal';
-import { LEVELS } from '../data/memoryLevels';
-import FlipCard from './FlipCard';
+import GameModal from './game-modal';
+import { LEVELS } from './mock-data-memory-card/memory-levels';
+import FlipCard from './flip-card';
 
 const getRandomPairs = (cards, numPairs = 8) => {
   const textCards = cards.filter(card => card.type === 'text');

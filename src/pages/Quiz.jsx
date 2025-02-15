@@ -1,4 +1,4 @@
-import QuizComp from "../components/quiz/quiz";
+import QuizComp from "../components/practices/quiz/quiz";
 
 const questions = [
   {

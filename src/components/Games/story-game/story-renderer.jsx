@@ -1,5 +1,5 @@
 import React from "react";
-import DropZone from "./DropZone";
+import DropZone from "./drop-zone";
 
 const StoryRenderer = ({ storyText, answers, onDrop }) => {
   const parts = storyText.split(/({\d+})/g);

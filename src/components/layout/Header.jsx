@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Bell, Search, Settings,Menu } from "lucide-react";
 import { useNavigate } from "react-router-dom";
-import ConnectWalletButton from "../ui/ConnectWalletButton";
+import ConnectWalletButton from "./ui/connect-wallet-button";
 import { useWallet } from "../../context/WalletContext";
 import { truncateAddress } from "../../utils/helpers";
 

@@ -23,3 +23,15 @@ Describe what's happening now in detail.
 
 ## 💡 Expected Behavior
 Describe what should happen instead.
+
+
+**Make sure to access the [Contributor Guideline](https://github.com/STARKLAOrg/STARKLA-Frontend/issues/84) before proceeding.**
+
+Before you make a draft PR, please check the [GIT Guideline](https://github.com/STARKLAOrg/STARKLA-Frontend/issues/84) to ensure your changes align with the project's standards.
+
+**NOTE:**
+
+- 🔧 Use **kebab-case** for file and folder names.
+- 📦 Use `@/` aliases for imports (avoid relative paths).
+- 🔍 Please review the organization of the pages to ensure everything is correct.
+- 🙏 Thank you, happy hacking! 🌟

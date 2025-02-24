@@ -8,9 +8,9 @@ const Footer = ({ customClass = "" }) => {
         <div className="flex items-center justify-between">
           <div className="flex items-center gap-2">
             <Brain className="w-6 h-6" />
-            <span className="text-white font-semibold">STARKLA</span>
+            <span className="text-white font-semibold">AURORA</span>
           </div>
-          <p className="text-sm">© 2025 STARKLA. All rights reserved.</p>
+          <p className="text-sm">© 2025 AURORA. All rights reserved.</p>
         </div>
       </div>
     </footer>

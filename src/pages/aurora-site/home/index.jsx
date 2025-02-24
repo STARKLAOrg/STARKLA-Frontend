@@ -1,7 +1,14 @@
 import React from "react";
-import { ArrowRight, Brain, BookOpen, MessageSquare, Award, BarChart2 } from "lucide-react";
+import {
+  ArrowRight,
+  Brain,
+  BookOpen,
+  MessageSquare,
+  Award,
+  BarChart2,
+} from "lucide-react";
 import { NavLink } from "react-router-dom";
-import StarklaIcon from "@/assets/S-icon.jpg";
+import AURORAIcon from "@/assets/S-icon.jpg";
 
 const FeatureCard = ({ icon: Icon, title, description }) => (
   <div className="p-6 bg-white rounded-xl shadow-sm border border-gray-100">
@@ -26,9 +33,6 @@ const BenefitItem = ({ title, description }) => (
 );
 
 const HomePage = () => {
-
-
-
   return (
     <div className="min-h-screen bg-gray-50">
       {/* Navigation */}
@@ -37,11 +41,13 @@ const HomePage = () => {
           <div className="flex justify-between h-16 items-center">
             <div className="flex items-center gap-2">
               <img
-                src={StarklaIcon}
-                alt="Starkla Icon"
+                src={AURORAIcon}
+                alt="AURORA Icon"
                 className="w-8 h-8 object-contain rounded-full"
               />
-              <span className="text-xl font-semibold text-gray-900">STARKLA</span>
+              <span className="text-xl font-semibold text-gray-900">
+                AURORA
+              </span>
             </div>
           </div>
         </div>
@@ -57,9 +63,11 @@ const HomePage = () => {
             <h2 className="text-3xl font-bold text-white mb-8">
               Ready to Transform Your English Learning Journey?
             </h2>
-            <button
-              className="inline-flex items-center gap-2 bg-white text-blue-600 px-6 py-3 rounded-lg font-medium hover:bg-blue-50 hover:bg-opacity-90 transition-colors">
-              <NavLink data-testid="get-started" to="wallet-connection"> Get Started Now</NavLink>
+            <button className="inline-flex items-center gap-2 bg-white text-blue-600 px-6 py-3 rounded-lg font-medium hover:bg-blue-50 hover:bg-opacity-90 transition-colors">
+              <NavLink data-testid="get-started" to="wallet-connection">
+                {" "}
+                Get Started Now
+              </NavLink>
               <ArrowRight className="w-5 h-5" />
             </button>
           </div>
@@ -94,7 +102,7 @@ const HomePage = () => {
       <div className="bg-white py-24">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl font-bold text-gray-900 text-center mb-12">
-            The STARKLA Advantage
+            The AURORA Advantage
           </h2>
           <div className="grid md:grid-cols-2 gap-12 max-w-7xl mx-auto">
             <div className="space-y-8">
@@ -137,19 +145,17 @@ const HomePage = () => {
               Your Personalized Virtual English Tutor
             </h1>
             <p className="text-xl text-gray-600 mb-8">
-              STARKLA combines cutting-edge AI with blockchain technology to deliver a revolutionary
-              approach to language learning. Experience personalized tutoring that adapts to your needs.
+              AURORA combines cutting-edge AI with blockchain technology to
+              deliver a revolutionary approach to language learning. Experience
+              personalized tutoring that adapts to your needs.
             </p>
-            <button
-
-              className="inline-flex items-center gap-2 bg-blue-600 text-white px-6 py-3 rounded-lg font-medium hover:bg-blue-700 transition-colors">
+            <button className="inline-flex items-center gap-2 bg-blue-600 text-white px-6 py-3 rounded-lg font-medium hover:bg-blue-700 transition-colors">
               Get Started
               <ArrowRight className="w-5 h-5" />
             </button>
           </div>
         </div>
       </div>
-
     </div>
   );
 };

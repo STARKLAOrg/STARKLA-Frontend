@@ -1,38 +1,35 @@
 import React from "react";
-import { ArrowRight, Brain, BookOpen, MessageSquare, Award, BarChart2 } from "lucide-react";
+import { ArrowRight, Brain, MessageSquare, Award } from "lucide-react";
 import { NavLink } from "react-router-dom";
 import StarklaIcon from "@/assets/S-icon.jpg";
 
 const FeatureCard = ({ icon: Icon, title, description }) => (
-  <div className="p-6 bg-white rounded-xl shadow-sm border border-gray-100">
-    <div className="w-12 h-12 bg-blue-50 rounded-lg flex items-center justify-center mb-4">
-      <Icon className="w-6 h-6 text-blue-600" />
+  <div className="p-6 bg-white dark:bg-gray-800 rounded-xl shadow-sm border border-gray-100 dark:border-gray-700">
+    <div className="w-12 h-12 bg-blue-50 dark:bg-gray-700 rounded-lg flex items-center justify-center mb-4">
+      <Icon className="w-6 h-6 text-blue-600 dark:text-blue-400" />
     </div>
-    <h3 className="text-lg font-semibold text-gray-900 mb-2">{title}</h3>
-    <p className="text-gray-600">{description}</p>
+    <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-2">{title}</h3>
+    <p className="text-gray-600 dark:text-gray-400">{description}</p>
   </div>
 );
 
 const BenefitItem = ({ title, description }) => (
   <div className="flex gap-4">
-    <div className="w-6 h-6 mt-1 rounded-full bg-blue-100 flex items-center justify-center flex-shrink-0">
-      <div className="w-2 h-2 rounded-full bg-blue-600" />
+    <div className="w-6 h-6 mt-1 rounded-full bg-blue-100 dark:bg-gray-700 flex items-center justify-center flex-shrink-0">
+      <div className="w-2 h-2 rounded-full bg-blue-600 dark:bg-blue-400" />
     </div>
     <div>
-      <h4 className="font-semibold text-gray-900 mb-1">{title}</h4>
-      <p className="text-gray-600">{description}</p>
+      <h4 className="font-semibold text-gray-900 dark:text-white mb-1">{title}</h4>
+      <p className="text-gray-600 dark:text-gray-400">{description}</p>
     </div>
   </div>
 );
 
 const HomePage = () => {
-
-
-
   return (
-    <div className="min-h-screen bg-gray-50">
-      {/* Navigation */}
-      <nav className="bg-white border-b">
+    <div className="min-h-screen bg-gray-50 dark:bg-gray-900">
+      
+      <nav className="bg-white dark:bg-gray-800 border-b dark:border-gray-700">
         <div className="w-full px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between h-16 items-center">
             <div className="flex items-center gap-2">
@@ -41,34 +38,34 @@ const HomePage = () => {
                 alt="Starkla Icon"
                 className="w-8 h-8 object-contain rounded-full"
               />
-              <span className="text-xl font-semibold text-gray-900">STARKLA</span>
+              <span className="text-xl font-semibold text-gray-900 dark:text-white">STARKLA</span>
             </div>
           </div>
         </div>
       </nav>
 
-      {/* Top CTA Section */}
-      <div className="bg-blue-600">
+      
+      <div className="bg-blue-600 dark:bg-gray-800">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
           <div className="text-center">
-            <p className="text-xl text-blue-100 mb-4">
+            <p className="text-xl text-blue-100 dark:text-blue-200 mb-4">
               Say It Right, Learn It Bright – Meet Your AI Agent!
             </p>
             <h2 className="text-3xl font-bold text-white mb-8">
               Ready to Transform Your English Learning Journey?
             </h2>
             <button
-              className="inline-flex items-center gap-2 bg-white text-blue-600 px-6 py-3 rounded-lg font-medium hover:bg-blue-50 hover:bg-opacity-90 transition-colors">
-              <NavLink data-testid="get-started" to="wallet-connection"> Get Started Now</NavLink>
+              className="inline-flex items-center gap-2 bg-white dark:bg-blue-600  px-6 py-3 rounded-lg font-medium hover:bg-blue-50 dark:hover:bg-gray-700 transition-colors">
+              <NavLink data-testid="get-started" to="wallet-connection" className='text-blue-600 dark:text-white hover:bg-blue-50 dark:hover:bg-gray-700'> Get Started Now</NavLink>
               <ArrowRight className="w-5 h-5" />
             </button>
           </div>
         </div>
       </div>
 
-      {/* Core Features Section */}
+      
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-24">
-        <h2 className="text-3xl font-bold text-gray-900 text-center mb-12">
+        <h2 className="text-3xl font-bold text-gray-900 dark:text-white text-center mb-12">
           Core Features
         </h2>
         <div className="grid md:grid-cols-3 gap-8 max-w-7xl mx-auto">
@@ -90,10 +87,10 @@ const HomePage = () => {
         </div>
       </div>
 
-      {/* What Makes Us Different */}
-      <div className="bg-white py-24">
+      
+      <div className="bg-white dark:bg-gray-800 py-24">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-3xl font-bold text-gray-900 text-center mb-12">
+          <h2 className="text-3xl font-bold text-gray-900 dark:text-white text-center mb-12">
             The STARKLA Advantage
           </h2>
           <div className="grid md:grid-cols-2 gap-12 max-w-7xl mx-auto">
@@ -129,20 +126,19 @@ const HomePage = () => {
         </div>
       </div>
 
-      {/* Bottom Hero Section */}
-      <div className="bg-white border-t">
+      
+      <div className="bg-white dark:bg-gray-800 border-t dark:border-gray-700">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-24">
           <div className="text-center w-full max-w-4xl mx-auto">
-            <h1 className="text-4xl sm:text-5xl font-bold text-gray-900 mb-6">
+            <h1 className="text-4xl sm:text-5xl font-bold text-gray-900 dark:text-white mb-6">
               Your Personalized Virtual English Tutor
             </h1>
-            <p className="text-xl text-gray-600 mb-8">
+            <p className="text-xl text-gray-600 dark:text-gray-400 mb-8">
               STARKLA combines cutting-edge AI with blockchain technology to deliver a revolutionary
               approach to language learning. Experience personalized tutoring that adapts to your needs.
             </p>
             <button
-
-              className="inline-flex items-center gap-2 bg-blue-600 text-white px-6 py-3 rounded-lg font-medium hover:bg-blue-700 transition-colors">
+              className="inline-flex items-center gap-2 bg-blue-600 text-white px-6 py-3 rounded-lg font-medium hover:bg-blue-700  dark:hover:bg-gray-700 transition-colors">
               Get Started
               <ArrowRight className="w-5 h-5" />
             </button>

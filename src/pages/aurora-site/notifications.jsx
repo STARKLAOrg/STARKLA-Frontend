@@ -35,21 +35,21 @@ const NotificationCenter = () => {
   });
 
   return (
-    <div className="w-full h-screen p-6 bg-white">
+    <div className="w-full h-screen p-6 bg-white dark:bg-gray-900">
       <h2 className="text-xl font-bold mb-4">Notifications</h2>
       <div className="flex space-x-4 mb-4">
         <button
           onClick={() => setFilter("all")}
           className={`px-4 py-2 rounded ${
-            filter === "all" ? "bg-gray-800 text-white" : "bg-gray-200"
+            filter === "all" ? "bg-gray-800 text-white" : "bg-gray-200 dark:bg-gray-700"
           }`}
         >
           All
         </button>
         <button
           onClick={() => setFilter("unread")}
-          className={`px-4 py-2 rounded ${
-            filter === "unread" ? "bg-gray-800 text-white" : "bg-gray-200"
+          className={`px-4 py-2  rounded ${
+            filter === "unread" ? "bg-gray-800  text-white" : "bg-gray-200 dark:bg-gray-700 "
           }`}
         >
           Unread
@@ -57,7 +57,7 @@ const NotificationCenter = () => {
         <button
           onClick={() => setFilter("read")}
           className={`px-4 py-2 rounded ${
-            filter === "read" ? "bg-gray-800 text-white" : "bg-gray-200"
+            filter === "read" ? "bg-gray-800 text-white" : "bg-gray-200 dark:bg-gray-700"
           }`}
         >
           Read
@@ -68,11 +68,11 @@ const NotificationCenter = () => {
           filteredNotifications.map((notification) => (
             <div
               key={notification.id}
-              className="p-4 border rounded-lg shadow-sm bg-gray-100"
+              className="p-4 border rounded-lg shadow-sm bg-gray-100 dark:bg-gray-800"
             >
               <p className="font-semibold">{notification.title}</p>
-              <p className="text-gray-600 text-sm">{notification.message}</p>
-              <p className="text-gray-500 text-xs mt-1">
+              <p className="text-gray-600 dark:text-gray-200 text-sm">{notification.message}</p>
+              <p className="text-gray-500 dark:text-gray-400 text-xs mt-1">
                 {notification.timestamp}
               </p>
             </div>

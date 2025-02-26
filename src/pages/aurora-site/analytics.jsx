@@ -49,12 +49,12 @@ const SimpleLineChart = ({ data }) => {
 };
 
 const ProgressBar = ({ value, label }) => (
-  <div className="mt-2">
-    <div className="flex justify-between text-sm text-gray-600 mb-1">
+  <div className="mt-2 ">
+    <div className="flex justify-between  text-sm text-gray-600 dark:text-gray-200 mb-1">
       <span>{label}</span>
       <span>{value}%</span>
     </div>
-    <div className="h-2 bg-gray-200 rounded-full">
+    <div className="h-2 bg-gray-200  rounded-full">
       <div 
         className="h-full bg-blue-500 rounded-full" 
         style={{ width: `${value}%` }}
@@ -64,7 +64,7 @@ const ProgressBar = ({ value, label }) => (
 );
 
 const CourseCard = ({ title, description, slides, imageSrc }) => (
-  <div className="p-4 bg-white rounded-lg border flex items-start gap-4">
+  <div className="p-4 bg-white dark:bg-gray-800 rounded-lg border flex items-start gap-4">
     {/* Image */}
     {imageSrc && (
       <img
@@ -74,9 +74,9 @@ const CourseCard = ({ title, description, slides, imageSrc }) => (
       />
     )}
     <div className="flex-1">
-      <h3 className="font-medium text-gray-900">{title}</h3>
-      <p className="text-sm text-gray-500 mt-1">{description}</p>
-      <p className="text-sm text-gray-500 mt-2">{slides} Slides</p>
+      <h3 className="font-medium text-gray-900 dark:text-gray-200 ">{title}</h3>
+      <p className="text-sm text-gray-500 dark:text-gray-300 mt-1">{description}</p>
+      <p className="text-sm text-gray-500 dark:text-gray-400 mt-2">{slides} Slides</p>
     </div>
   </div>
 );
@@ -98,10 +98,10 @@ const Sidebar = () => {
   ];
 
   return (
-    <div className="w-64 min-h-screen bg-white border-r border-gray-200">
+    <div className="w-64 min-h-screen bg-white dark:bg-gray-900 border-r border-gray-200">
       <div className="p-4 flex flex-col h-full">
         <div className="flex items-center gap-3 mb-8">
-          <div className="w-9 h-9 rounded-full bg-gray-100 flex items-center justify-center">
+          <div className="w-9 h-9 rounded-full bg-gray-100 flex dark:bg-gray-800 items-center justify-center">
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M20 21C20 19.6044 20 18.9067 19.8278 18.3389C19.44 17.0605 18.4395 16.06 17.1611 15.6722C16.5933 15.5 15.8956 15.5 14.5 15.5H9.5C8.10444 15.5 7.40665 15.5 6.83886 15.6722C5.56045 16.06 4.56004 17.0605 4.17224 18.3389C4 18.9067 4 19.6044 4 21M16.5 7.5C16.5 9.98528 14.4853 12 12 12C9.51472 12 7.5 9.98528 7.5 7.5C7.5 5.01472 9.51472 3 12 3C14.4853 3 16.5 5.01472 16.5 7.5Z" stroke="#71717A" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
             </svg>
@@ -164,7 +164,7 @@ const Sidebar = () => {
 
 // Header component
 const Header = () => (
-  <header className="bg-white border-b p-4">
+  <header className="bg-white  border-b p-4">
     <div className="flex justify-between items-center">
       <Menu className="w-6 h-6 text-gray-500" />
       <LogOut className="w-6 h-6 text-gray-500" />
@@ -185,7 +185,7 @@ const performanceData = [
 
 const AnalyticsContent = () => {
   return (
-    <div className="space-y-6">
+    <div className="space-y-6 ">
       <div className="grid grid-cols-3 gap-4">
         <StatCard 
           title="Certifications" 
@@ -208,7 +208,7 @@ const AnalyticsContent = () => {
       </div>
 
       <div className="grid grid-cols-2 gap-4">
-        <div className="bg-white p-4 rounded-lg border">
+        <div className="bg-white dark:bg-gray-800 p-4 rounded-lg border">
           <h2 className="font-medium mb-4">Progress</h2>
           <div className="flex justify-center">
             <div className="relative w-32 h-32">
@@ -234,7 +234,7 @@ const AnalyticsContent = () => {
           </div>
           <div className="flex justify-center mt-4 gap-4 text-sm">
             <div className="flex items-center gap-2">
-              <div className="w-3 h-3 rounded-full bg-gray-200" />
+              <div className="w-3 h-3 rounded-full bg-gray-200 " />
               <span>Remaining</span>
             </div>
             <div className="flex items-center gap-2">
@@ -244,16 +244,16 @@ const AnalyticsContent = () => {
           </div>
         </div>
 
-        <div className="bg-white p-4 rounded-lg border">
+        <div className="bg-white dark:bg-gray-800 p-4 rounded-lg border">
           <h2 className="font-medium mb-4">Monthly performance</h2>
           <SimpleLineChart data={performanceData} />
         </div>
       </div>
 
-      <div className="bg-white p-4 rounded-lg border">
+      <div className="bg-white dark:bg-gray-800 p-4 rounded-lg border">
         <div className="flex justify-between items-center mb-4">
           <h2 className="font-medium">Latest results</h2>
-          <button className="text-blue-500 text-sm">See all</button>
+          <button className="text-blue-500 text-sm dark:bg-gray-800">See all</button>
         </div>
         <div className="space-y-4">
           <ProgressBar label="Unit 5 - Parts of the computer" value={50} />
@@ -266,9 +266,9 @@ const AnalyticsContent = () => {
         <div className="flex justify-between items-center mb-4">
           <h2 className="font-medium">Continue classes</h2>
           <div className="flex gap-2">
-            <button className="text-blue-500 text-sm">See all</button>
-            <button className="text-gray-400">&lt;</button>
-            <button className="text-gray-400">&gt;</button>
+            <button className="text-blue-500 text-sm dark:bg-gray-800">See all</button>
+            <button className="text-gray-400 dark:bg-gray-800">&lt;</button>
+            <button className="text-gray-400 dark:bg-gray-800">&gt;</button>
           </div>
         </div>
         <div className="grid grid-cols-2 gap-4">
@@ -305,10 +305,12 @@ const MainLayout = ({ children }) => {
   );
 };
 
-// Main Analytics Component
+
 const Analytics = () => {
   return (
-      <AnalyticsContent />
+     <div className=''>
+       <AnalyticsContent />
+     </div>
 
   );
 };

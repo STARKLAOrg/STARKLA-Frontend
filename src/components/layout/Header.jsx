@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import  { useState } from "react";
 import { Bell, Search, Settings,Menu } from "lucide-react";
 import { useNavigate } from "react-router-dom";
 import ConnectWalletButton from "./ui/connect-wallet-button";
@@ -68,11 +68,11 @@ const Header = ({ onMenuClick }) => {
     setFilteredOptions(filteredOptionsinArray);
   };
   return (
-    <header className="h-16 border-b border-gray-200 bg-white px-6">
+    <header className="h-16 border-b border-gray-200 dark:border-gray-700 dark:bg-gray-900 bg-white px-6">
       <div className="flex items-center justify-between h-full">
         {/* Menu Button */} 
         <button
-          className="p-2 text-gray-600 hover:text-gray-800 rounded-lg mr-4 hover:bg-gray-100"
+          className="p-2 text-gray-600 dark:text-gray-100 hover:text-gray-800 dark:hover:text-gray-300  dark:bg-gray-800 rounded-lg mr-4 hover:bg-gray-100 dark:hover:bg-gray-700"
           onClick={onMenuClick}
         >
           <Menu className="h-6 w-6" />
@@ -86,17 +86,17 @@ const Header = ({ onMenuClick }) => {
           <input
             type="text"
             placeholder="Search..."
-            className="block w-full pl-10 pr-3 py-2 border border-gray-200 rounded-lg bg-gray-50 text-sm placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+            className="block w-full pl-10 pr-3 py-2 border border-gray-200 dark:border-gray-700  rounded-lg bg-gray-50 dark:bg-gray-800  text-sm placeholder-gray-500 focus:outline-none focus:ring-1 focus:ring-blue-500 focus:border-transparent"
             value={searchQuery}
             onChange={(e) => handleChange(e)}
           />
           {showFiltered && (
-            <div className="absolute top-full left-0 w-full mt-1 bg-white border border-gray-200 rounded-lg shadow-md cursor-pointer z-10">
+            <div className="absolute top-full left-0 w-full mt-1 bg-white dark:bg-gray-800  border border-gray-200 dark:border-gray-700  rounded-lg shadow-md cursor-pointer z-10">
               {searchQuery.length > 0 ? (
                 filteredOptions.length > 0 ? (
                   filteredOptions.map((option, index) => (
                     <div
-                      className="px-4 py-2 text-gray-500 hover:bg-gray-100"
+                      className="px-4 py-2 text-gray-500 dark:text-gray-100 hover:bg-gray-100 dark:hover:bg-gray-700"
                       key={index}
                       onClick={() => {
                         setSearchQuery(option);
@@ -131,7 +131,7 @@ const Header = ({ onMenuClick }) => {
             onMouseLeave={() => setActiveTooltip(null)}
           >
             <button
-              className="relative p-2 text-gray-400 hover:text-gray-500 rounded-full hover:bg-gray-100"
+              className="relative p-2 text-gray-400 dark:text-gray-200 dark:hover:text-gray-300 hover:text-gray-500 dark:hover:bg-gray-700 rounded-full hover:bg-gray-100 dark:bg-gray-800"
               onClick={() => setIsOpen(!isOpen)}
             >
               <Bell className="h-6 w-6" />
@@ -140,11 +140,11 @@ const Header = ({ onMenuClick }) => {
               )}
             </button>
             {isOpen && (
-              <div className="absolute right-0 mt-2 w-72 bg-white border rounded shadow-md z-50">
+              <div className="absolute right-0 mt-2 w-72 bg-white dark:bg-gray-800 border rounded shadow-md z-50">
                 <div className="flex justify-between items-center px-4 py-2 border-b">
                   <span className="font-semibold">Notifications</span>
                   <button
-                    className="text-blue-500 text-sm"
+                    className="text-blue-500 text-sm dark:bg-gray-800 "
                     onClick={markAllAsRead}
                   >
                     Mark all as read
@@ -154,13 +154,13 @@ const Header = ({ onMenuClick }) => {
                   notifications.map((notification) => (
                     <div
                       key={notification.id}
-                      className={`px-4 py-2 text-black ${
+                      className={`px-4 py-2 text-black dark:text-gray-100 ${
                         notification.isRead ? "opacity-50" : "font-bold"
                       }`}
                       onClick={() => navigate("/notifications")}
                     >
                       <p>{notification.title}</p>
-                      <span className="text-xs text-gray-500">
+                      <span className="text-xs text-gray-500 dark:text-gray-300">
                         {notification.timestamp}
                       </span>
                     </div>
@@ -181,9 +181,9 @@ const Header = ({ onMenuClick }) => {
           >
             <button
               onClick={() => handleNavClick("settings")}
-              className="flex items-center gap-2 px-3 py-2 text-left rounded-lg transition-colors hover:bg-gray-50"
+              className="flex items-center gap-2 px-3 py-2 text-left rounded-lg transition-colors hover:bg-gray-50 dark:hover:bg-gray-700 dark:bg-gray-800"
             >
-              <Settings className="w-5 h-5 text-gray-600" />
+              <Settings className="w-5 h-5 text-gray-600 dark:text-gray-200" />
             </button>
             {activeTooltip === "settings" && (
               <div className="absolute top-full mt-2 left-1/2 transform -translate-x-1/2 bg-gray-500 text-white text-xs px-2 py-2 rounded-md">

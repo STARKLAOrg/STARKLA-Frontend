@@ -47,7 +47,7 @@ const WalletConnection = () => {
   };
 
   return (
-    <div className="min-h-screen bg-blue-600 flex items-center justify-center p-4">
+    <div className="min-h-screen bg-blue-600 dark:bg-gray-800 flex items-center justify-center p-4">
       <div className="w-full max-w-6xl flex flex-col md:flex-row items-center justify-between gap-8 p-8">
         {/* Left Content */}
         <div className="w-full md:w-2/3 space-y-6">
@@ -69,7 +69,7 @@ const WalletConnection = () => {
           <button 
             onClick={connectWallet}
             disabled={isConnecting}
-            className={`bg-white text-blue-600 px-6 py-3 rounded-lg font-medium 
+            className={`bg-white dark:bg-blue-600 dark:text-gray-200 text-blue-600 px-6 py-3 rounded-lg font-medium 
               hover:bg-blue-50 transition-colors inline-flex items-center gap-2
               ${isConnecting ? 'opacity-75 cursor-not-allowed' : ''}`}
           >

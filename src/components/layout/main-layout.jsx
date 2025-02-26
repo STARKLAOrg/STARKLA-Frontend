@@ -23,7 +23,7 @@ const MainLayout = ({ children }) => {
       <div className="flex flex-col flex-1">
         <Header onMenuClick={toggleSidebar} />
         <main
-          className={`flex-1 p-6 bg-gray-50 overflow-auto transition-all duration-1 ${
+          className={`flex-1 p-6 bg-gray-50 dark:bg-gray-900  overflow-auto transition-all duration-1 ${
             isSidebarOpen ? "lg:ml-64" : ""
           }`}
         >

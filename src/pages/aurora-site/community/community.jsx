@@ -26,16 +26,16 @@ const CommunityInteractionPage = () => {
     ];
 
     return (
-        <div className="min-h-screen bg-gray-900 text-gray-100 p-6">
+        <div className="min-h-screen dark:bg-gray-900 text-gray-100 p-6">
             <div className="max-w-6xl mx-auto">
                 <div className="mb-8 text-center">
-                    <h1 className="text-4xl font-bold mb-4">Community Interaction</h1>
+                    <h1 className="text-4xl font-bold mb-4 text-gray-900 dark:text-gray-100">Community Interaction</h1>
                     <p className="text-gray-400">Engage with peers, mentors, and exciting challenges to enhance your learning experience.</p>
                 </div>
 
                 <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
                     {features.map((feature, index) => (
-                        <Card key={index} className="bg-gray-800 border-gray-700">
+                        <Card key={index} className="dark:bg-gray-800 dark:border-gray-700">
                             <CardHeader className="flex flex-col items-center text-center">
                                 {feature.icon}
                                 <CardTitle className="mt-4 text-xl font-bold">{feature.title}</CardTitle>
@@ -44,7 +44,7 @@ const CommunityInteractionPage = () => {
                                 <p className="text-gray-400">{feature.description}</p>
                             </CardContent>
                             <CardFooter className="flex justify-center">
-                                <Button variant="outline" className="text-blue-400 border-blue-400 hover:bg-blue-400 hover:text-gray-900">
+                                <Button variant="outline" className="text-blue-400 border-blue-400 hover:bg-blue-400 hover:text-gray-900 dark:hover:text-gray-200 dark:bg-gray-800">
                                     {feature.buttonText}
                                 </Button>
                             </CardFooter>

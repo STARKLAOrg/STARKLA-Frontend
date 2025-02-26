@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Brain } from "lucide-react";
 import { useNavigate } from "react-router-dom";
-import starklaImage from "@/assets/starkla.jpg";
+import auroraImage from "@/assets/aurora.jpg";
 
 const WalletConnection = () => {
   const navigate = useNavigate();
@@ -53,11 +53,11 @@ const WalletConnection = () => {
         <div className="w-full md:w-2/3 space-y-6">
           <div className="flex items-center gap-2">
             <Brain className="w-8 h-8 text-white" />
-            <h1 className="text-3xl font-bold text-white">STARKLA</h1>
+            <h1 className="text-3xl font-bold text-white">AURORA</h1>
           </div>
           
           <p className="text-blue-100 text-lg max-w-md">
-            Welcome to STARKLA - your AI-powered English learning companion. Connect your Starknet wallet to start your personalized learning journey.
+            Welcome to AURORA - your AI-powered English learning companion. Connect your Starknet wallet to start your personalized learning journey.
           </p>
           
           {error && (
@@ -93,7 +93,7 @@ const WalletConnection = () => {
           {/* Main image circle */}
           <div className="relative w-64 h-64 rounded-full overflow-hidden bg-blue-700 flex items-center justify-center">
             <img
-              src={starklaImage}
+              src={auroraImage}
               alt="AI Assistant"
               className="w-full h-full object-cover"
             />

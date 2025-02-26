@@ -143,10 +143,10 @@ const Sidebar = () => {
         <div className="mt-auto space-y-3">
           <button
             className="flex items-center gap-3 px-4 py-2.5 w-full text-white bg-gradient-to-r from-blue-600 to-blue-700 rounded-lg hover:from-blue-700 hover:to-blue-800 transition-all shadow-sm"
-            onClick={() => console.log('Opening Starkla chat')}
+            onClick={() => console.log('Opening Aurora chat')}
           >
             <MessageSquare className="w-5 h-5" />
-            <span className="text-sm font-medium">Talk with Starkla</span>
+            <span className="text-sm font-medium">Talk with Aurora</span>
           </button>
 
           <button

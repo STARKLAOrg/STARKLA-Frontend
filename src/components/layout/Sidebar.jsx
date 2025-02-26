@@ -170,13 +170,13 @@ const Sidebar = ({ isOpen, onClose, headerHeight }) => {
         </nav>
 
         <div className="py-16 space-y-3 flex flex-col">
-          <NavLink to="starkla-chat">
+          <NavLink to="aurora-chat">
             <button
-              onClick={() => handleNavClick("starkla-chat")}
+              onClick={() => handleNavClick("aurora-chat")}
               className="flex items-center gap-3 px-4 py-2.5 w-full text-white bg-blue-600 rounded-lg hover:bg-blue-700 transition-colors shadow-sm"
             >
               <MessageSquare className="w-5 h-5" />
-              <span className="text-sm font-medium">Talk with Starkla</span>
+              <span className="text-sm font-medium">Talk with Aurora</span>
             </button>
           </NavLink>
         </div>

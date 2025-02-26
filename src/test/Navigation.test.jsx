@@ -63,8 +63,8 @@ test("test for opening the community interaction space", async () => {
 test("test for initiating the AI conversation interface", async () => {
     render(<Sidebar />, { wrapper: BrowserRouter })
     const user = userEvent.setup();
-    await user.click(screen.getByTestId('starkla-ai'));
-    expect(window.location.pathname).toBe('/starkla');  // Check if the URL changed
+    await user.click(screen.getByTestId('aurora-ai'));
+    expect(window.location.pathname).toBe('/aurora');  // Check if the URL changed
 })
 test("test for displaying  user notifications when clicked", async () => {
     render(<Header />, { wrapper: BrowserRouter })

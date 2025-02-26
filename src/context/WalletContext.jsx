@@ -12,7 +12,7 @@ export const WalletProvider = ({ children }) => {
       try {
         const { wallet: connectedWallet } = await connect({ 
           modalMode: "neverAsk",
-          dappName: "STARKLA"  
+          dappName: "AURORA"  
         });
         
         if (connectedWallet?.isConnected) {
@@ -31,7 +31,7 @@ export const WalletProvider = ({ children }) => {
     try {
       const { wallet: newWallet } = await connect({
         modalMode: "alwaysAsk",  
-        dappName: "STARKLA",     
+        dappName: "AURORA",     
         modalTheme: "dark"      
       });
       

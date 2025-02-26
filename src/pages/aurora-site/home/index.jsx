@@ -1,7 +1,7 @@
 import React from "react";
 import { ArrowRight, Brain, BookOpen, MessageSquare, Award, BarChart2 } from "lucide-react";
 import { NavLink } from "react-router-dom";
-import StarklaIcon from "@/assets/S-icon.jpg";
+import AuroraIcon from "@/assets/S-icon.jpg";
 
 const FeatureCard = ({ icon: Icon, title, description }) => (
   <div className="p-6 bg-white rounded-xl shadow-sm border border-gray-100">
@@ -37,11 +37,11 @@ const HomePage = () => {
           <div className="flex justify-between h-16 items-center">
             <div className="flex items-center gap-2">
               <img
-                src={StarklaIcon}
-                alt="Starkla Icon"
+                src={AuroraIcon}
+                alt="Aurora Icon"
                 className="w-8 h-8 object-contain rounded-full"
               />
-              <span className="text-xl font-semibold text-gray-900">STARKLA</span>
+              <span className="text-xl font-semibold text-gray-900">AURORA</span>
             </div>
           </div>
         </div>
@@ -94,7 +94,7 @@ const HomePage = () => {
       <div className="bg-white py-24">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl font-bold text-gray-900 text-center mb-12">
-            The STARKLA Advantage
+            The AURORA Advantage
           </h2>
           <div className="grid md:grid-cols-2 gap-12 max-w-7xl mx-auto">
             <div className="space-y-8">
@@ -137,7 +137,7 @@ const HomePage = () => {
               Your Personalized Virtual English Tutor
             </h1>
             <p className="text-xl text-gray-600 mb-8">
-              STARKLA combines cutting-edge AI with blockchain technology to deliver a revolutionary
+              AURORA combines cutting-edge AI with blockchain technology to deliver a revolutionary
               approach to language learning. Experience personalized tutoring that adapts to your needs.
             </p>
             <button

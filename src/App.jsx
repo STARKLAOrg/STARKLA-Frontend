@@ -23,7 +23,7 @@ import Notifications from "@/pages/aurora-site/notifications";
 
 // 🌐 Community & Interaction
 import CommunityInteractionPage from "@/pages/aurora-site/community/community";
-import StarklaChat from "@/pages/aurora-site/aurora-chat";
+import AuroraChat from "@/pages/aurora-site/aurora-chat";
 
 // 📊 Analytics & Categories
 import Categories from "@/pages/aurora-site/categories";
@@ -63,7 +63,7 @@ function App() {
           <Route path="/categories" element={<Categories />} />
           <Route path="/analytics" element={<Analytics />} />
           <Route path="/settings" element={<SettingsPage />} />
-          <Route path="/starkla-chat" element={<StarklaChat />} />
+          <Route path="/aurora-chat" element={<AuroraChat />} />
           <Route path="/certification-content" element={<CertificationContent />} />
           <Route path="/module-details" element={<ModuleDetails />} />
 

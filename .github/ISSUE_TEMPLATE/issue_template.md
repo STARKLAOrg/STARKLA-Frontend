@@ -1,5 +1,5 @@
 ---
-name: STARKLA Frontend issue
+name: AURORA Frontend issue
 about: Suggest an idea for this project
 title: ''
 labels: ''
@@ -24,9 +24,9 @@ Describe what's happening now in detail.
 ## 💡 Expected Behavior
 Describe what should happen instead.
 
-**Make sure to access the [Contributor Guideline](https://github.com/STARKLAOrg/STARKLA-Frontend/issues/84) before proceeding.**
+**Make sure to access the [Contributor Guideline](https://github.com/AURORAOrg/AURORA-Frontend/issues/84) before proceeding.**
 
-Before you make a draft PR, please check the [GIT Guideline](https://github.com/STARKLAOrg/STARKLA-Frontend/issues/84) to ensure your changes align with the project's standards.
+Before you make a draft PR, please check the [GIT Guideline](https://github.com/AURORAOrg/AURORA-Frontend/issues/84) to ensure your changes align with the project's standards.
 
 **NOTE:**
 

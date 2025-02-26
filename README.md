@@ -3,7 +3,7 @@
 <table>
   <tr>
     <td>
-      <img src="https://github.com/STARKLAOrg/Frontend/blob/main/src/assets/photo_2025-01-07_22-19-24.jpg" alt="STARKLA" width="300">
+      <img src="https://github.com/AURORAOrg/Frontend/blob/main/src/assets/photo_2025-01-07_22-19-24.jpg" alt="AURORA" width="300">
     </td>
     <td>
       <h2>What is AURORA.LA?</h2>

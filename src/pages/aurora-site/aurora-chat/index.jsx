@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
 import { Mic, ChevronLeft, ChevronRight, LightbulbIcon, FileIcon } from 'lucide-react';
 import ElizaBot from 'elizabot';
-import starklaImage from "@/assets/starkla.jpg";
+import auroraImage from "@/assets/aurora.jpg";
 import styles from './aurora-chat.module.css'; 
 
-const StarklaChat = () => {
+const AuroraChat = () => {
   const [messages, setMessages] = useState([]);
   const [inputText, setInputText] = useState('');
   const [isTyping, setIsTyping] = useState(false);
@@ -56,13 +56,13 @@ const StarklaChat = () => {
         <div className="flex items-center gap-4">
           <div className="w-16 h-16 rounded-full overflow-hidden">
             <img 
-              src={starklaImage} 
-              alt="Starkla Profile"
+              src={auroraImage} 
+              alt="Aurora Profile"
               className="w-full h-full object-cover"
             />
           </div>
           <div>
-            <h1 className="text-lg font-semibold text-gray-900">STARKLA</h1>
+            <h1 className="text-lg font-semibold text-gray-900">AURORA</h1>
             <h2 className="text-sm text-gray-600">Software Architecture lesson - Chapter 1</h2>
           </div>
         </div>
@@ -160,4 +160,4 @@ const StarklaChat = () => {
 
 };
 
-export default StarklaChat;
+export default AuroraChat;

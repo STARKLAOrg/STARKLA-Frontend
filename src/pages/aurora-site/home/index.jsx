@@ -28,7 +28,7 @@ const BenefitItem = ({ title, description }) => (
 const HomePage = () => {
   return (
     <div className="min-h-screen bg-gray-50 dark:bg-gray-900">
-      {/* Navigation */}
+      
       <nav className="bg-white dark:bg-gray-800 border-b dark:border-gray-700">
         <div className="w-full px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between h-16 items-center">
@@ -44,7 +44,7 @@ const HomePage = () => {
         </div>
       </nav>
 
-      {/* Top CTA Section */}
+      
       <div className="bg-blue-600 dark:bg-gray-800">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
           <div className="text-center">
@@ -63,7 +63,7 @@ const HomePage = () => {
         </div>
       </div>
 
-      {/* Core Features Section */}
+      
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-24">
         <h2 className="text-3xl font-bold text-gray-900 dark:text-white text-center mb-12">
           Core Features
@@ -87,7 +87,7 @@ const HomePage = () => {
         </div>
       </div>
 
-      {/* What Makes Us Different */}
+      
       <div className="bg-white dark:bg-gray-800 py-24">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl font-bold text-gray-900 dark:text-white text-center mb-12">
@@ -126,7 +126,7 @@ const HomePage = () => {
         </div>
       </div>
 
-      {/* Bottom Hero Section */}
+      
       <div className="bg-white dark:bg-gray-800 border-t dark:border-gray-700">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-24">
           <div className="text-center w-full max-w-4xl mx-auto">

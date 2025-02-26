@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import  { useState } from 'react';
 import { Mic, ChevronLeft, ChevronRight, LightbulbIcon, FileIcon } from 'lucide-react';
 import ElizaBot from 'elizabot';
 import starklaImage from "@/assets/starkla.jpg";
@@ -50,9 +50,9 @@ const StarklaChat = () => {
 
   return (
     <div className="flex flex-col bg-white dark:bg-gray-800 w-full">
-      {/* Header */}
+     
       <div className="w-full px-6 py-2 flex items-center dark:border-gray-500 border-b border-gray-100">
-        {/* Left: Profile Section */}
+        
         <div className="flex items-center gap-4">
           <div className="w-16 h-16 rounded-full overflow-hidden">
             <img 
@@ -67,7 +67,7 @@ const StarklaChat = () => {
           </div>
         </div>
 
-        {/* Right: Unit Navigation */}
+        
         <div className="flex items-center gap-4 ml-auto">
           <span className="text-gray-600 dark:text-gray-300 text-sm">Current unit: 1</span>
           <div className="flex gap-1">
@@ -87,7 +87,7 @@ const StarklaChat = () => {
         </div>
       </div>
 
-      {/* Main Content Area */}
+     
       <div className="px-6 py-4 w-full flex  flex-col gap-4">
         {messages.map((message, index) => (
           <div
@@ -107,7 +107,7 @@ const StarklaChat = () => {
           </div>
         ))}
 
-        {/* Eliza Typing */}
+        
         {isTyping && (
           <div className={`${styles.message} ${styles.messageEliza} shadow-md p-4`}>
             <div className={styles.dotAnimate}>
@@ -119,7 +119,7 @@ const StarklaChat = () => {
         )}
       </div>
 
-      {/* Bottom Controls */}
+      
       <div className="w-full border-t border-gray-100 dark:border-gray-500 px-6 py-4 dark:bg-gray-800 bg-white sticky bottom-0 shadow-lg">
         <div className="flex gap-4 items-center w-full">
           <button className="flex items-center gap-2 px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors shadow-md">

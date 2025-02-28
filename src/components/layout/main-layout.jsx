@@ -1,7 +1,7 @@
-import React, { useState } from "react";
-import Sidebar from "./Sidebar";
-import Header from "./Header";
+import { useState } from "react";
 import Footer from "./Footer";
+import Header from "./Header";
+import Sidebar from "./Sidebar";
 
 const MainLayout = ({ children }) => {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
@@ -30,10 +30,10 @@ const MainLayout = ({ children }) => {
           {children}
         </main>
         <Footer
-         customClass={`p-4 bg-gray-100 transition-all duration-100 ${
-          isSidebarOpen ? "lg:ml-64" : ""
-        }`}
-      />
+          customClass={`p-4 bg-blue-600 transition-all duration-100 ${
+            isSidebarOpen ? "lg:ml-64" : ""
+          }`}
+        />
       </div>
     </div>
   );
